@@ -26,6 +26,7 @@ Update profile information
 
 Get user profile details
 
+
 📝 Task Management
 
 Create new tasks

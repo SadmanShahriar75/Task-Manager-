@@ -8,9 +8,9 @@ class CanselledScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.separated(
-        itemCount: 10,
+        itemCount: 0,
         itemBuilder: (context, index) {
-          var _newTaskList;
+          List _newTaskList = [];
           return TaskCard(taskModel: _newTaskList[index], refreshParent: () {});
         },
         separatorBuilder: (context, index) {

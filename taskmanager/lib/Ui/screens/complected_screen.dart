@@ -9,9 +9,9 @@ class ComplectedScreen extends StatelessWidget {
     return Scaffold(
       body: ListView.separated(
         scrollDirection: Axis.vertical,
-        itemCount: 10,
+        itemCount: 0,
         itemBuilder: (context, index) {
-          var _newTaskList;
+          List _newTaskList = [];
           return TaskCard(taskModel: _newTaskList[index], refreshParent: () {});
         },
         separatorBuilder: (context, index) {

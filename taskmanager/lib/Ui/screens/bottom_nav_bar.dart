@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:taskmanager/Ui/screens/canselled_screen.dart';
 import 'package:taskmanager/Ui/screens/complected_screen.dart';
 import 'package:taskmanager/Ui/screens/new_task_screen.dart';
-
 import 'package:taskmanager/Ui/screens/progress.dart';
 import 'package:taskmanager/Ui/widgets/appbar.dart';
 
@@ -18,7 +17,7 @@ class MainNavBarHolderScreen extends StatefulWidget {
 class _BottomNavState extends State<MainNavBarHolderScreen> {
   int _selected = 0;
 
-  final List<Widget> _sreens = [
+  final List<Widget> _screens = [
     NewTaskScreen(),
     ProgressScreen(),
     CanselledScreen(),
@@ -30,7 +29,7 @@ class _BottomNavState extends State<MainNavBarHolderScreen> {
     return Scaffold(
       appBar: TmAppbar(),
 
-      body: _sreens[_selected],
+      body: _screens[_selected],
       bottomNavigationBar: NavigationBar(
         selectedIndex: _selected,
         onDestinationSelected: (int index) {
